@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+    <title>Vertientes - Agua sin límite</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <!-- Navegación superior-->
+        <nav class="nav">
+            <!-- logo -->
+            <a href="../index.html">
+                <img class="logo" src="../images/logo_vertientes_text.svg" alt="Logo Vertientes">
+            </a>
+            <ul class="nav--top">
+                <li class="nav--top--item"><a class="nav--top--link" href="../index.html">Inicio</a></li>
+                <li class="nav--top--item"><a class="nav--top--link" href="./servicios.html">Servicios</a></li>
+                <li class="nav--top--item"><a class="nav--top--link" href="./clientes.html">Clientes</a></li>
+                <li class="nav--top--item"><a class="nav--top--link" href="./faqs.html">FAQs</a></li>
+                <li class="nav--top--item"><a class="nav--top--link activo" href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- inicio de contenido principal -->
+    <main class="main--contacto">
+        <!-- Formulario de contacto -->
+        <section class="container__main section--contacto">
+            <form class="form--contacto">
+                <h1 class="titulo lct">Formulario de contacto</h1>
+                <label class="label lc1" for="nombre">Nombre</label>
+                <input class="input--contacto inp1" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                <label class="label lc2" for="apellido">Apellido</label>
+                <input class="input--contacto inp2" type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+                <label class="label lc3" for="email">Email</label>
+                <input class="input--contacto inp3" type="email" id="email" name="email" placeholder="email@ejemplo.com">
+                <label class="label lc4" for="telefono">Teléfono de contacto</label>
+                <input class="input--contacto inp4" type="number" id="telefono" name="telefono" placeholder="Numero telefónico">
+                <label class="label lc5">Estoy interesado en</label>
+                <select class="input--contacto inp5" name="dispenser" id="dispenser--election">
+                    <option value="0">Elija el modelo</option>
+                    <option value="1">Space mini red</option>
+                    <option value="2">Space red</option>
+                    <option value="3">Space fridge red</option>
+                    <option value="4">Silver mini red</option>
+                    <option value="5">Silver red</option>
+                    <option value="6">Silber fridge red</option>
+                </select>
+                <label class="label lc6" for="consulta">Consulta</label>
+                <textarea class="input--contacto inp6" name="consulta" id="consulta" cols="30" rows="10" placeholder="Deje aquí su consulta"></textarea>
+
+                <!-- Botones -->
+                <input class="btn--contacto btn1" type="reset" value="Reset">
+                <input class="btn--contacto btn2" type="submit" value="Enviar">
+            </form>
+            <a href="#" class="btn--inicio"><img src="../images/flecha_arriba.svg" alt="Ir arriba"></a>
+        </section>
+
+        <!-- imagen lateral -->
+        <div class="img__container section--contacto--img">
+            <img class="img__main img__contacto" src="../images/contacto.png" alt="Vaso con agua">
+        </div>
+    </main>
+
+    <!-- Inicio footer -->
+    <footer>
+        <!-- Menu de navegación inferior-->
+        <nav class="footer__nav">
+            <div>Menú de navegación</div>
+            <ul>
+                <li class="footer__nav__item"><a class="nav--foot--link" href="../index.html">Inicio</a></li>
+                <li class="footer__nav__item"><a class="nav--foot--link" href="./servicios.html">Servicios</a></li>
+                <li class="footer__nav__item"><a class="nav--foot--link" href="./clientes.html">Clientes</a></li>
+                <li class="footer__nav__item"><a class="nav--foot--link" href="./faqs.html">FAQs</a></li>
+                <li class="footer__nav__item"><a class="nav--foot--link" href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Formas de contacto -->
+        <div class="footer__div--contacto">
+            <div class="subtitulo--contacto">Contáctanos</div>
+            <div class="logos--contacto">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=0123456789"><img class="footer__logo" src="../images/whatsapp.svg" alt="Enviar Whatsapp"></a>
+                <a target="_blank" href="mailto:info@maildeejemplo.com.ar"><img class="footer__logo" src="../images/logo_mail.svg" alt="Enviar email"></a>
+            </div>
+        </div>
+        
+        <!-- Redes sociales-->
+        <div class="footer__div--redes">
+            <div class="subtitulo--contacto">Síguenos</div>
+            <div class="logos--redes">
+                <a target="_blank" href="https://www.facebook.com"><img class="footer__logo" src="../images/facebook.svg" alt="Ir a Facebook"></a>
+                <a target="_blank" href="https://www.instagram.com"><img class="footer__logo" src="../images/instagram.svg" alt="Ir a Instagram"></a>
+            </div>
+        </div>
+
+        <!-- Copyrigth -->
+        <div class="copyrigth">® 2022 - Juan Pablo Lattion</div>
+    </footer>
+
+</body>
+
+</html>
