@@ -14,6 +14,7 @@ body{
 }
 
 header {
+    /* Banner gradiente */
     background: linear-gradient(90deg, rgb(0, 85, 200) 0%, rgb(0, 45, 155) 15%, rgb(0, 20, 110) 50%, rgb(0, 45, 155) 85%, rgb(0, 85, 200) 100%);
     text-align: center;
     padding-bottom: 20px;
@@ -101,8 +102,14 @@ footer {
 
 .nav--top--item {
     background-color: lightskyblue;
-    margin-top: 5px;
     border-radius: 20px;
+    margin: 5px 5px 5px 5px;
+}
+
+/* animacion menu superior */
+.nav--top--item:active{
+    box-shadow: -2px 0 5px white, 0 2px 5px white, 2px 0 5px white, 0 -2px 5px white;
+    transform: translateY(-10px);
 }
 
 .nav--top--link{
@@ -366,11 +373,22 @@ footer {
     grid-area: c6;
 }
 
+/* animacion logos clientes */
 .container--translucid {
     margin-bottom: 20px;
     background-color: rgba(128, 128, 128, 0.5);
     border-radius: 20px;
-    padding: 1rem
+    padding: 1rem;
+    animation-name: clientes;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes clientes {
+    0% {border-radius: 20px; box-shadow: 0 0 30px black;}
+    50% {border-radius: 5px; box-shadow: 0 0 10px black;}
+    100% {border-radius: 20px; box-shadow: 0 0 30px black;}
 }
 
 .img--logo--clientes {
@@ -620,6 +638,8 @@ footer {
         width: 50%;
     }
 
+    .img--index,
+
     /* Configuracion header */
     header{
         padding-bottom: 5px;
@@ -636,6 +656,25 @@ footer {
         justify-content: center;
     }
 
+    .nav--top--item {
+        border-radius: 20px 5px 20px 5px;
+    }
+
+    /* animacion botones nav */
+    .nav--top--item:hover{
+        box-shadow: -2px 0 5px white, 0 2px 5px white, 2px 0 5px white, 0 -2px 5px white;
+        animation-name: animation--nav;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes animation--nav {
+        0% {border-radius: 20px 5px 20px 5px}
+        50% {border-radius: 5px 20px 5px 20px}
+        100% {border-radius: 20px 5px 20px 5px}
+    }
+
     .nav--top--link{
         padding: 10px 60px 10px 60px;
         font-size: 1.5rem;
@@ -644,9 +683,9 @@ footer {
     /* Configuracion para la pagina index */
 
     .main--index{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
-        "section--index section--index--img";
+        "section--index section--index section--index--img";
         align-items: center;
     }
 
@@ -665,7 +704,7 @@ footer {
     }
 
     .img__index--aside{
-        width: 100%;
+        width: 90%;
     }
 
     .section--index--img .btn--inicio{
@@ -736,6 +775,12 @@ footer {
 
     .container__main{
         width: 95%;
+    }
+
+    .listado--dispenser:hover{
+        transform: scale(1.2);
+        transition-duration: 500ms;
+        transition-timing-function: linear;
     }
 
     /* Configuracion para la pagina clientes */
