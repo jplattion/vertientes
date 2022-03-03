@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <title>Vertientes - Agua sin límite</title>
@@ -13,75 +16,74 @@
 <body>
     <!-- Encabezado -->
     <header>
-        <!-- Navegación superior-->
-        <nav class="nav">
-            <!-- logo-->
-            <a href="#">
-                <img class="logo" src="./images/logo_vertientes_text.svg" alt="Logo Vertientes">
-            </a>
-            <div class="gota"></div>
-            <ul class="nav--top">
-                <li class="nav--top--item"><a class="nav--top--link activo" href="#">Inicio</a></li>
-                <li class="nav--top--item"><a class="nav--top--link" href="./sections/servicios.html">Servicios</a></li>
-                <li class="nav--top--item"><a class="nav--top--link" href="./sections/clientes.html">Clientes</a></li>
-                <li class="nav--top--item"><a class="nav--top--link" href="./sections/faqs.html">FAQs</a></li>
-                <li class="nav--top--item"><a class="nav--top--link" href="./sections/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <!-- logo-->
+        <a href="#">
+            <img class="logo mx-auto d-block" src="./images/logo_vertientes_text.svg" alt="Logo Vertientes">
+        </a>
     </header>
-
-    <!-- inicio del contenido principal-->
-    <main class="main--index">
-        <section class="container__main section--index">
-            <div class="container--nosotros">
-                <h1 class="titulo">Nosotros</h1>
-                <p><strong class="marca">Vertientes - Agua Sin Límite</strong> es una empresa dedicada desde 2016 al alquiler de dispensers sin botellones. Nuestros servicios pueden ser adquiridos por particulares, comercios o empresas.</p>
+    <!-- Navegación superior-->
+    <nav class="sticky-top nav nav-pills nav-fill">
+        <a class="nav-link nav--top--link active" href="#">Inicio</a>
+        <a class="nav-link nav--top--link" href="./sections/servicios.html">Servicios</a>
+        <a class="nav-link nav--top--link" href="./sections/clientes.html">Clientes</a>
+        <a class="nav-link nav--top--link" href="./sections/faqs.html">FAQs</a>
+        <a class="nav-link nav--top--link" href="./sections/contacto.html">Contacto</a>
+    </nav>
+        
+        <!-- inicio del contenido principal-->
+    <main class="container-fluid row">
+        <section class="col-md-8">
+            <div>
+                <div>
+                    <h1 class="titulo">Nosotros</h1>
+                    <p class="container__main"><strong class="marca">Vertientes - Agua Sin Límite</strong> es una empresa dedicada desde 2016 al alquiler de dispensers sin botellones. Nuestros servicios pueden ser adquiridos por particulares, comercios o empresas.</p>
+                </div>
+                <div class="container__main">
+                    <h2 class="subtitulo">Misión</h2>
+                    <p>Proveer un servicio de provisión de agua fría y caliente de calidad a precios competitivos.</p>
+                </div>
+                <img class="img-fluid img__main img__main--index" src="./images/index_mision.jpg" alt="Vaso con agua">
+                <div class="container__main">
+                    <h2 class="subtitulo">Visión</h2>
+                    <p>Desde la empresa buscamos solucionar la provisión de agua tanto a particulares, comercios y empresas.</p>
+                </div>
+                <img class="img-fluid img__main img__main--index" src="./images/index_vision.png" alt="Mujer tomando agua">
+                <div class="container__main">
+                    <h2 class="subtitulo">Valores</h2>
+                    <ul class="lista--centrada">
+                        <li>Compromiso con un servicio de calidad.</li>
+                        <li>Relaciones de confianza y respeto muto con nuestros clientes y proveedores.</li>
+                        <li>Compromiso con prácticas comerciales ambientalmente sostenibles.</li>
+                    </ul>
+                </div>
+                <img class="img-fluid img__main img__main--index" src="./images/index_valores.jpg" alt="Manos dentro de agua transparente">
             </div>
-            <div class="container--mision">
-                <h2 class="subtitulo">Misión</h2>
-                <p>Proveer un servicio de provisión de agua fría y caliente de calidad a precios competitivos.</p>
-            </div>
-            <img class="img__main img__index img--mision" src="./images/index_mision.jpg" alt="Vaso con agua">
-            <div class="container--vision">
-                <h2 class="subtitulo">Visión</h2>
-                <p>Desde la empresa buscamos solucionar la provisión de agua tanto a particulares, comercios y empresas.</p>
-            </div>
-            <img class="img__main img__index img--vision" src="./images/index_vision.jpg" alt="Mujer tomando agua">
-            <div class="container--valores">
-                <h2 class="subtitulo">Valores</h2>
-                <p>Compromiso con un servicio de calidad.</p>
-                <p>Relaciones de confianza y respeto muto con nuestros clientes y proveedores.</p>
-                <p>Compromiso con prácticas comerciales ambientalmente sostenibles.</p>
-            </div>
-            <img class="img__main img__index img--valores" src="./images/index_valores.jpg" alt="Manos dentro de agua transparente">
         </section>
-        <!-- imagen lateral -->
-        <div class="img__container section--index--img">
-            <img class="img__main img__index--aside" src="./images/index_img.png" alt="Vaso con agua">
-            <a href="#" class="btn--inicio"><img src="../images/flecha_arriba.svg" alt="Ir arriba"></a>
+            <!-- imagen lateral -->
+        <div class="col-md-4">
+                <img class="img-fluid img__main img--aside" src="./images/index_img.jpg" alt="Vaso con agua">
         </div>
-
+            <a href="#" class="btn--inicio"><img src="../images/flecha_arriba.svg" alt="Ir arriba"></a>
+            
     </main>
 
     <!-- Inicio footer -->
     <footer>
         <!-- Menu de navegación inferior-->
         <nav class="footer__nav">
-            <div>Menú de navegación</div>
-            <div>
-                <ul>
-                    <li class="footer__nav__item"><a class="nav--foot--link" href="#">Inicio</a></li>
-                    <li class="footer__nav__item"><a class="nav--foot--link" href="./sections/servicios.html">Servicios</a></li>
-                    <li class="footer__nav__item"><a class="nav--foot--link" href="./sections/clientes.html">Clientes</a></li>
-                    <li class="footer__nav__item"><a class="nav--foot--link" href="./sections/faqs.html">FAQs</a></li>
-                    <li class="footer__nav__item"><a class="nav--foot--link" href="./sections/contacto.html">Contacto</a></li>
-                </ul>
+            <div class="subtitulo--footer">Menú de navegación</div>
+            <div class="footer__nav__item">
+                <a class="nav--foot--link" href="#">Inicio</a>
+                <a class="nav--foot--link" href="./sections/servicios.html">Servicios</a>
+                <a class="nav--foot--link" href="./sections/clientes.html">Clientes</a>
+                <a class="nav--foot--link" href="./sections/faqs.html">FAQs</a>
+                <a class="nav--foot--link" href="./sections/contacto.html">Contacto</a>
             </div>
         </nav>
 
         <!-- Formas de contacto -->
         <div class="footer__div--contacto">
-            <div class="subtitulo--contacto">Contáctanos</div>
+            <div class="subtitulo--footer">Contáctanos</div>
             <div class="logos--contacto">
                 <a target="_blank" href="https://api.whatsapp.com/send?phone=0123456789"><img class="footer__logo" src="./images/whatsapp.svg" alt="Enviar Whatsapp"></a>
                 <a target="_blank" href="mailto:info@maildeejemplo.com.ar"><img class="footer__logo" src="./images/logo_mail.svg" alt="Enviar email"></a>
@@ -90,7 +92,7 @@
         
         <!-- Redes sociales-->
         <div class="footer__div--redes">
-            <div class="subtitulo--contacto">Síguenos</div>
+            <div class="subtitulo--footer">Síguenos</div>
             <div class="logos--redes">
                 <a target="_blank" href="https://www.facebook.com"><img class="footer__logo" src="./images/facebook.svg" alt="Ir a Facebook"></a>
                 <a target="_blank" href="https://www.instagram.com"><img class="footer__logo" src="./images/instagram.svg" alt="Ir a Instagram"></a>
@@ -100,6 +102,8 @@
         <!--Copyrigth-->
         <div class="copyrigth">® 2022 - Juan Pablo Lattión</div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 
