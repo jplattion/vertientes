@@ -123,6 +123,15 @@ section{
     text-transform: uppercase;
     text-shadow: -1px 0 1px grey, 0 1px 1px grey, 1px 0 1px grey, 0 -1px 1px grey;
     text-align: center;
+    animation-name: titulo;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+@keyframes titulo {
+    0% {translate: 100%;}
+    100% {translate: 0;}
 }
 
 .subtitulo {
@@ -211,7 +220,7 @@ section{
     border-radius: 20px;
     padding: 1rem;
     animation-name: clientes;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -255,7 +264,7 @@ section{
         max-width: 400px;
         margin-bottom: 1rem;
     }
-
+    
     .img--none{
         display: none;
     }
@@ -270,6 +279,10 @@ section{
     .listado--dispenser {
         width: 30vw;
         max-width: 400px;
+    }
+
+    .listado--dispenser:hover{
+        transform: none;
     }
 
     /* Configuracion de la pagina clientes */
@@ -299,6 +312,16 @@ section{
     .img__main--contacto,
     .img--aside{
         width: 100%;
+        animation-name: imagenes;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes imagenes {
+        0% {translate: -120%;}
+        50% {translate: 0;}
+        100% {translate: 120%;}
     }
 
     footer{
