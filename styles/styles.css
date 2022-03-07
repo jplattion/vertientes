@@ -1,351 +1,272 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
 /* Regla de reseteo */
 * {
-    padding: 0;
-    margin: 0;
-}
+  padding: 0;
+  margin: 0; }
 
-/* Reglas generales */
-body{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.5rem;
-    background-color: lightblue;
-    overflow-x: hidden;
-}
+/* Reglas generales de estructura */
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.5rem;
+  background-color: lightblue;
+  overflow-x: hidden; }
 
 header, .sticky-top {
-    background: linear-gradient(90deg, rgb(0, 85, 200) 0%, rgb(0, 45, 155) 15%, rgb(0, 20, 110) 50%, rgb(0, 45, 155) 85%, rgb(0, 85, 200) 100%);
-    text-transform: uppercase;
-}
+  background: linear-gradient(90deg, #0055c8 0%, #002d9b 15%, #00146e 50%, #002d9b 85%, #0055c8 100%);
+  text-transform: uppercase; }
 
 main {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center; }
 
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "fnav fdcontacto fdredes"
-        "cr cr cr";
-    background-color: gray;
-    text-align: center;
-    text-shadow: 0 0 10px black;
-    padding-top: 10px;
-}
-
-section{
-    margin-top: 1rem;
-}
+section {
+  margin-top: 1rem; }
 
 /* Reglas para el header y la navegacion superior*/
 .logo {
-    width: 60%;
-    min-width: 200px;
-    max-width: 400px;
-    padding: 1rem 0 1rem 0;
-}
+  width: 60%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 1rem 0 1rem 0; }
 
-.nav-link{
-    color: white;
-}
+.nav-link {
+  color: white; }
 
-.nav-link:hover{
-    box-shadow: inset -2px 0 5px white, inset 0 2px 5px white, inset 2px 0 5px white, inset 0 -2px 5px white;
-    animation-name: animation--nav; 
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    color: white;
-}
+.nav-link:hover {
+  box-shadow: inset -2px 0 5px white, inset 0 2px 5px white, inset 2px 0 5px white, inset 0 -2px 5px white;
+  animation-name: animation--nav;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: white; }
 
 @keyframes animation--nav {
-    50% {border-radius: 20px;}
-}
+  50% {
+    border-radius: 20px; } }
 
 /* Reglas para el footer y la navegacion inferior*/
-.footer__nav{
-    grid-area: fnav;
-}
-
-.footer__div--contacto{
-    grid-area: fdcontacto;
-}
-
-.footer__div--redes{
-    grid-area: fdredes;
-}
-
-.footer__nav__item {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    text-shadow: none;
-}
-
-.footer__logo {
-    width: 80px;
-}
-
-.copyrigth {
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "fnav fdcontacto fdredes" "cr cr cr";
+  background-color: gray;
+  text-align: center;
+  text-shadow: 0 0 10px black;
+  padding-top: 10px; }
+  footer .footer__nav {
+    grid-area: fnav; }
+    footer .footer__nav .footer__nav__item {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      text-shadow: none; }
+      footer .footer__nav .footer__nav__item .nav--foot--link {
+        text-decoration: none;
+        color: darkblue; }
+  footer .footer__div--contacto {
+    grid-area: fdcontacto; }
+  footer .footer__div--redes {
+    grid-area: fdredes; }
+  footer .copyrigth {
     grid-area: cr;
     margin-bottom: 10px;
     font-size: 1rem;
-    text-shadow: none;
-}
-
-.nav--foot--link{
-    text-decoration: none;
-    color: darkblue;
-}
+    text-shadow: none; }
 
 .logos--contacto,
-.logos--redes{
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0;
-}
+.logos--redes {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0; }
+  .logos--contacto .footer__logo,
+  .logos--redes .footer__logo {
+    width: 80px; }
 
-.subtitulo--footer{
-    font-size: 1.5rem;
-}
+.subtitulo--footer {
+  font-size: 1.5rem; }
 
 /* Reglas para textos e imagenes en general*/
 .titulo {
-    font-size: 2.25rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    text-shadow: -1px 0 1px grey, 0 1px 1px grey, 1px 0 1px grey, 0 -1px 1px grey;
-    text-align: center;
-    animation-name: titulo;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-}
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: -1px 0 1px grey, 0 1px 1px grey, 1px 0 1px grey, 0 -1px 1px grey;
+  text-align: center;
+  animation-name: titulo;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in; }
 
 @keyframes titulo {
-    0% {translate: 100%;}
-    100% {translate: 0;}
-}
+  0% {
+    translate: 100%; }
+  100% {
+    translate: 0; } }
 
 .subtitulo {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 1.25rem 0 1rem 0;
-}
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1.25rem 0 1rem 0; }
 
 .marca {
-    font-weight: bold;
-    color: blue;
-}
+  font-weight: bold;
+  color: blue; }
 
 .img__main {
-    border: 2px solid white;
-    border-radius: 20px;
-}
+  border: 2px solid white;
+  border-radius: 20px; }
 
-.btn--inicio img{
-    margin: 1rem 0 1rem 0;
-    width: 2.5rem;
-}
+.btn--inicio img {
+  margin: 1rem 0 1rem 0;
+  width: 2.5rem; }
 
 .img__main--index,
 .img__main--faqs,
-.img__main--contacto{
-    width: 33vw;
-    max-width: 400px;
-    margin-bottom: 1rem;
-}
+.img__main--contacto {
+  width: 33vw;
+  max-width: 400px;
+  margin-bottom: 1rem; }
 
 /* Configuracion de la pagina index */
+.img--aside {
+  position: sticky;
+  top: 150px; }
 
-.img--aside{
-    position: sticky;
-    top: 150px;
-}
-
-.lista--centrada{
-    list-style-image: url(../images/gota_listado.svg);
-}
+.lista--centrada {
+  list-style-image: url(../images/gota_listado.svg); }
 
 /* Configuracion de la pagina servicios */
 .container__main {
-    background-image: url(../images/background_body.jpg);
-    background-size: cover;
-    border: 2px solid whitesmoke;
-    border-radius: 20px;
-    margin-bottom: 1rem;
-}
+  background-image: url(../images/background_body.jpg);
+  background-size: cover;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  margin-bottom: 1rem; }
 
 .listado--dispenser {
-    background-color: rgba(135, 206, 250, 0.5);
-    border-radius: 20px;
-    border: 1px solid grey;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
+  background-color: rgba(135, 206, 250, 0.5);
+  border-radius: 20px;
+  border: 1px solid grey;
+  text-transform: uppercase;
+  font-weight: bolder; }
 
-.lista--tecnico div ul{
-    list-style-image: url(../images/gota_listado.svg);
-    text-align: left;
-}
+.lista--tecnico div ul {
+  list-style-image: url(../images/gota_listado.svg);
+  text-align: left; }
 
-.listado--dispenser:hover{
-        transform: scale(1.2);
-        transition-duration: 500ms;
-        transition-timing-function: linear;
-    }
+.listado--dispenser:hover {
+  transform: scale(1.2);
+  transition-duration: 500ms;
+  transition-timing-function: linear; }
 
 /* Configuracion de la pagina clientes */
-
 .img--logo--clientes {
-    margin-top: 20px;
-    width: 40%;
-}
+  margin-top: 20px;
+  width: 40%; }
 
-.img--clientes{
-    width: 50vw;
-    margin-bottom: 1rem;
-}
+.img--clientes {
+  width: 50vw;
+  margin-bottom: 1rem; }
 
 .container--translucid {
-    margin-bottom: 20px;
-    background-color: rgba(128, 128, 128, 0.5);
-    border-radius: 20px;
-    padding: 1rem;
-    animation-name: clientes;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
+  margin-bottom: 20px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 20px;
+  padding: 1rem;
+  animation-name: clientes;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
 
 @keyframes clientes {
-    0% {border-radius: 20px; box-shadow: 0 0 30px black;}
-    50% {border-radius: 5px; box-shadow: 0 0 10px black;}
-    100% {border-radius: 20px; box-shadow: 0 0 30px black;}
-}
-
+  0% {
+    border-radius: 20px;
+    box-shadow: 0 0 30px black; }
+  50% {
+    border-radius: 5px;
+    box-shadow: 0 0 10px black; }
+  100% {
+    border-radius: 20px;
+    box-shadow: 0 0 30px black; } }
 
 /* Configuracion de la pagina faqs */
-
-.img--aside--izq{
-    position: sticky;
-    left: 0;
-    top: 150px;
-}
+.img--aside--izq {
+  position: sticky;
+  left: 0;
+  top: 150px; }
 
 /* Configuracion de la pagina contacto */
+.btn--contacto {
+  font-size: 1.5rem;
+  width: 150px;
+  height: 50px;
+  margin-bottom: 1rem; }
 
-.btn--contacto{
-        font-size: 1.5rem;
-        width: 150px;
-        height: 50px;
-        margin-bottom: 1rem;
-    }
+/* MEDIA QUERYS */
+@media screen and (max-width: 768px) {
+  /* Configuracion general */
+  .img__main--index,
+  .img__main--faqs,
+  .img__main--contacto,
+  .img--aside {
+    width: 50vw;
+    max-width: 400px;
+    margin-bottom: 1rem; }
+  .img--none {
+    display: none; }
+  /* Configuracion de la pagina servicios */
+  .lista--tecnico ul {
+    margin-left: 4rem;
+    padding-right: 4rem; }
+  .listado--dispenser {
+    width: 30vw;
+    max-width: 400px; }
+  .listado--dispenser:hover {
+    transform: none; }
+  /* Configuracion de la pagina clientes */
+  .img--logo--clientes {
+    margin-top: 20px;
+    width: 80%; } }
 
-
-    
-    /* MEDIA QUERYS */
-
-@media screen and (max-width: 768px){
-
-    /* Configuracion general */
-    .img__main--index,
-    .img__main--faqs,
-    .img__main--contacto,
-    .img--aside{
-        width: 50vw;
-        max-width: 400px;
-        margin-bottom: 1rem;
-    }
-    
-    .img--none{
-        display: none;
-    }
-
-    /* Configuracion de la pagina servicios */
-
-    .lista--tecnico ul{
-        margin-left: 4rem;
-        padding-right: 4rem;
-    }
-
-    .listado--dispenser {
-        width: 30vw;
-        max-width: 400px;
-    }
-
-    .listado--dispenser:hover{
-        transform: none;
-    }
-
-    /* Configuracion de la pagina clientes */
-
-    .img--logo--clientes {
-        margin-top: 20px;
-        width: 80%;
-    }
-
-}
-
-@media screen and (max-width: 576px){
-
-/* Configuracion general */
-
-    .nav-pills .show > .nav-link{
-        background-color: transparent;
-    }
-
-    .nav-pills .show > .active{
-        background-color: #0d6efd;
-    }
-
-    .img__main--index,
-    .img__main--faqs,
-    .img--clientes,
-    .img__main--contacto,
-    .img--aside{
-        width: 100%;
-        animation-name: imagenes;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-    }
-    
-    @keyframes imagenes {
-        0% {translate: -120%;}
-        50% {translate: 0;}
-        100% {translate: 120%;}
-    }
-
-    footer{
+@media screen and (max-width: 576px) {
+  /* Configuracion general */
+  .nav-pills .show > .nav-link {
+    background-color: transparent; }
+  .nav-pills .show > .active {
+    background-color: #0d6efd; }
+  .img__main--index,
+  .img__main--faqs,
+  .img--clientes,
+  .img__main--contacto,
+  .img--aside {
+    width: 100%;
+    animation-name: imagenes;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; }
+  @keyframes imagenes {
+    0% {
+      translate: -120%; }
+    50% {
+      translate: 0; }
+    100% {
+      translate: 120%; } }
+  footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 1em 1em;
-    grid-template-areas:
-        "fnav"
-        "fdcontacto"
-        "fdredes"
-        "cr";
+    grid-template-areas: "fnav" "fdcontacto" "fdredes" "cr";
     background-color: gray;
     text-align: center;
     text-shadow: 0 0 10px black;
-    padding-top: 20px;
-    }
-
-    /* Configuracion de la pagina clientes */
-
-    .img--logo--clientes {
-        margin-top: 20px;
-        width: 60%;
-    }
-
-}
+    padding-top: 20px; }
+  /* Configuracion de la pagina clientes */
+  .img--logo--clientes {
+    margin-top: 20px;
+    width: 60%; } }

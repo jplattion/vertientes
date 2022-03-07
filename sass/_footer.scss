@@ -1,0 +1,63 @@
+/* Reglas para el footer y la navegacion inferior*/
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "fnav fdcontacto fdredes"
+        "cr cr cr";
+    background-color: gray;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+    padding-top: 10px;
+
+    .footer__nav{
+        grid-area: fnav;
+        
+        .footer__nav__item {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            text-shadow: none;
+
+            .nav--foot--link{
+                text-decoration: none;
+                color: darkblue;
+            }
+        }
+    }
+
+    .footer__div--contacto{
+        grid-area: fdcontacto;
+    }
+    
+    .footer__div--redes{
+        grid-area: fdredes;
+    }
+
+    .copyrigth {
+        grid-area: cr;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        text-shadow: none;
+    }
+}
+
+.logos--contacto,
+.logos--redes{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+
+    .footer__logo {
+        width: 80px;
+    }
+}
+
+.subtitulo--footer{
+    font-size: 1.5rem;
+}
+

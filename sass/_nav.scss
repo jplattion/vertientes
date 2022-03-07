@@ -1,0 +1,25 @@
+
+/* Reglas para el header y la navegacion superior*/
+.logo {
+    width: 60%;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 1rem 0 1rem 0;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    box-shadow: inset -2px 0 5px white, inset 0 2px 5px white, inset 2px 0 5px white, inset 0 -2px 5px white;
+    animation-name: animation--nav; 
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: white;
+}
+
+@keyframes animation--nav {
+    50% {border-radius: 20px;}
+}
