@@ -10,18 +10,15 @@ body {
   font-size: 1.5rem;
   background-color: lightblue;
   overflow-x: hidden; }
-
-header, .sticky-top {
-  background: linear-gradient(90deg, #0055c8 0%, #002d9b 15%, #00146e 50%, #002d9b 85%, #0055c8 100%);
-  text-transform: uppercase; }
-
-main {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center; }
-
-section {
-  margin-top: 1rem; }
+  body header, body .sticky-top {
+    background: linear-gradient(90deg, #0055c8 0%, #002d9b 15%, #00146e 50%, #002d9b 85%, #0055c8 100%);
+    text-transform: uppercase; }
+  body main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center; }
+  body section {
+    margin-top: 1rem; }
 
 /* Reglas para el header y la navegacion superior*/
 .logo {
