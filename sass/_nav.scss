@@ -9,17 +9,17 @@
 
 .nav-link{
     color: white;
-}
 
-.nav-link:hover{
-    box-shadow: $animacionNav;
-    animation-name: animation--nav; 
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    color: white;
-}
+    &:hover{
+        box-shadow: $animacionNav;
+        animation-name: animation--nav; 
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        color: white;
+    }
 
-@keyframes animation--nav {
-    50% {border-radius: 20px;}
+    @keyframes animation--nav {
+        50% {border-radius: 20px;}
+    }
 }

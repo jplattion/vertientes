@@ -11,7 +11,7 @@ body {
   background-color: lightblue;
   overflow-x: hidden; }
   body header, body .sticky-top {
-    background: linear-gradient(90deg, #0055c8 0%, #002d9b 15%, #00146e 50%, #002d9b 85%, #0055c8 100%);
+    background: linear-gradient(45deg, #0055c8 0%, #002d9b 15%, #00146e 50%, #002d9b 85%, #0055c8 100%);
     text-transform: uppercase; }
   body main {
     padding-top: 20px;
@@ -29,14 +29,13 @@ body {
 
 .nav-link {
   color: white; }
-
-.nav-link:hover {
-  box-shadow: inset -2px 0 5px white, inset 0 2px 5px white, inset 2px 0 5px white, inset 0 -2px 5px white;
-  animation-name: animation--nav;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  color: white; }
+  .nav-link:hover {
+    box-shadow: inset -2px 0 5px white, inset 0 2px 5px white, inset 2px 0 5px white, inset 0 -2px 5px white;
+    animation-name: animation--nav;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: white; }
 
 @keyframes animation--nav {
   50% {
@@ -71,21 +70,19 @@ footer {
     margin-bottom: 10px;
     font-size: 1rem;
     text-shadow: none; }
-
-.logos--contacto,
-.logos--redes {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0; }
-  .logos--contacto .footer__logo,
-  .logos--redes .footer__logo {
-    width: 80px; }
-
-.subtitulo--footer {
-  font-size: 1.5rem; }
+  footer .logos--contacto,
+  footer .logos--redes {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0; }
+    footer .logos--contacto .footer__logo,
+    footer .logos--redes .footer__logo {
+      width: 80px; }
+  footer .subtitulo--footer {
+    font-size: 1.5rem; }
 
 /* Reglas para textos e imagenes en general*/
 .titulo {
