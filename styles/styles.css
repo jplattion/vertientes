@@ -6,11 +6,12 @@
 
 /* Reglas generales de estructura */
 body {
+  overflow-x: hidden;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.5rem;
-  background-color: lightblue;
-  overflow-x: hidden; }
-  body header, body .sticky-top {
+  background-color: lightblue; }
+  body header,
+  body .sticky-top {
     background: linear-gradient(90deg, #0055c8 0%, #002d9b 15%, #00146e 50%, #002d9b 85%, #0055c8 100%);
     text-transform: uppercase; }
   body main {
@@ -47,7 +48,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "fnav fdcontacto fdredes" "cr cr cr";
-  background-color: gray;
+  background-color: grey;
   text-align: center;
   text-shadow: 0 0 10px black;
   padding-top: 10px; }
@@ -60,7 +61,9 @@ footer {
       text-shadow: none; }
       footer .footer__nav .footer__nav__item .nav--foot--link {
         text-decoration: none;
-        color: darkblue; }
+        color: Darkblue; }
+  footer div .subtitulo--footer {
+    font-size: 1.5rem; }
   footer .footer__div--contacto {
     grid-area: fdcontacto; }
   footer .footer__div--redes {
@@ -81,8 +84,6 @@ footer {
     footer .logos--contacto .footer__logo,
     footer .logos--redes .footer__logo {
       width: 80px; }
-  footer .subtitulo--footer {
-    font-size: 1.5rem; }
 
 /* Reglas para textos e imagenes en general*/
 .titulo {
@@ -109,7 +110,7 @@ footer {
 
 .marca {
   font-weight: bold;
-  color: blue; }
+  color: Blue; }
 
 .img__main {
   border: 2px solid white;
@@ -256,7 +257,7 @@ footer {
     grid-template-rows: auto;
     gap: 1em 1em;
     grid-template-areas: "fnav" "fdcontacto" "fdredes" "cr";
-    background-color: gray;
+    background-color: grey;
     text-align: center;
     text-shadow: 0 0 10px black;
     padding-top: 20px; }

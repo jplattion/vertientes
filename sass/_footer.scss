@@ -6,7 +6,7 @@ footer {
     grid-template-areas:
         "fnav fdcontacto fdredes"
         "cr cr cr";
-    background-color: gray;
+    background-color: $bkgFooter;
     text-align: center;
     text-shadow: 0 0 10px black;
     padding-top: 10px;
@@ -22,8 +22,14 @@ footer {
 
             .nav--foot--link{
                 text-decoration: none;
-                color: darkblue;
+                color: $colorFooterLink;
             }
+        }
+    }
+
+    div {
+        .subtitulo--footer{
+        font-size: 1.5rem;
         }
     }
 
@@ -54,9 +60,5 @@ footer {
         .footer__logo {
             width: 80px;
         }
-    }
-    
-    .subtitulo--footer{
-        font-size: 1.5rem;
     }
 }

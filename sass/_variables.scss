@@ -1,5 +1,24 @@
-$gradiente: linear-gradient(90deg, #0055c8 0%, #002d9b 15%, #00146e 50%, #002d9b 85%, #0055c8 100%);
+// Colores Background
+$bkgGradiente: linear-gradient(90deg, #0055c8 0%, #002d9b 15%, #00146e 50%, #002d9b 85%, #0055c8 100%);
+$bkgListadoDispenser:rgba(135, 206, 250, 0.5);
+$bkgContainerTranslucid: rgba(128, 128, 128, 0.5);
+$bkgPillsActive: #0d6efd;
+$bkgFooter: grey;
+$bkgBody: lightblue;
 
-$sombraGris: -1px 0 1px grey, 0 1px 1px grey, 1px 0 1px grey, 0 -1px 1px grey;
+// Colores Objetos
+$sombraGris: -1px 0 1px grey,
+0 1px 1px grey,
+1px 0 1px grey,
+0 -1px 1px grey;
 
-$animacionNav: inset -2px 0 5px white, inset 0 2px 5px white, inset 2px 0 5px white, inset 0 -2px 5px white;
+// Colores textos
+$colorFooterLink: Darkblue;
+$colorMarca: Blue;
+$colorNavLink: white;
+
+// Animaciones
+$animacionNav: inset -2px 0 5px white,
+inset 0 2px 5px white,
+inset 2px 0 5px white,
+inset 0 -2px 5px white;

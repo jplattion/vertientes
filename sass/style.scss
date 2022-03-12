@@ -25,8 +25,13 @@
 }
 
 @keyframes titulo {
-    0% {translate: 100%;}
-    100% {translate: 0;}
+    0% {
+        translate: 100%;
+    }
+
+    100% {
+        translate: 0;
+    }
 }
 
 .subtitulo {
@@ -37,7 +42,7 @@
 
 .marca {
     font-weight: bold;
-    color: blue;
+    color: $colorMarca;
 }
 
 .img__main {
@@ -45,14 +50,14 @@
     border-radius: 20px;
 }
 
-.btn--inicio img{
+.btn--inicio img {
     margin: 1rem 0 1rem 0;
     width: 2.5rem;
 }
 
 .img__main--index,
 .img__main--faqs,
-.img__main--contacto{
+.img__main--contacto {
     width: 33vw;
     max-width: 400px;
     margin-bottom: 1rem;
@@ -60,12 +65,12 @@
 
 /* Configuracion de la pagina index */
 
-.img--aside{
+.img--aside {
     position: sticky;
     top: 150px;
 }
 
-.lista--centrada{
+.lista--centrada {
     list-style-image: url(../images/gota_listado.svg);
 }
 
@@ -79,23 +84,23 @@
 }
 
 .listado--dispenser {
-    background-color: rgba(135, 206, 250, 0.5);
+    background-color: $bkgListadoDispenser;
     border-radius: 20px;
     border: 1px solid grey;
     text-transform: uppercase;
     font-weight: bolder;
 }
 
-.lista--tecnico div ul{
+.lista--tecnico div ul {
     list-style-image: url(../images/gota_listado.svg);
     text-align: left;
 }
 
-.listado--dispenser:hover{
-        transform: scale(1.2);
-        transition-duration: 500ms;
-        transition-timing-function: linear;
-    }
+.listado--dispenser:hover {
+    transform: scale(1.2);
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+}
 
 /* Configuracion de la pagina clientes */
 
@@ -104,14 +109,14 @@
     width: 40%;
 }
 
-.img--clientes{
+.img--clientes {
     width: 50vw;
     margin-bottom: 1rem;
 }
 
 .container--translucid {
     margin-bottom: 20px;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: $bkgContainerTranslucid;
     border-radius: 20px;
     padding: 1rem;
     animation-name: clientes;
@@ -121,15 +126,26 @@
 }
 
 @keyframes clientes {
-    0% {border-radius: 20px; box-shadow: 0 0 30px black;}
-    50% {border-radius: 5px; box-shadow: 0 0 10px black;}
-    100% {border-radius: 20px; box-shadow: 0 0 30px black;}
+    0% {
+        border-radius: 20px;
+        box-shadow: 0 0 30px black;
+    }
+
+    50% {
+        border-radius: 5px;
+        box-shadow: 0 0 10px black;
+    }
+
+    100% {
+        border-radius: 20px;
+        box-shadow: 0 0 30px black;
+    }
 }
 
 
 /* Configuracion de la pagina faqs */
 
-.img--aside--izq{
+.img--aside--izq {
     position: sticky;
     left: 0;
     top: 150px;
@@ -137,36 +153,36 @@
 
 /* Configuracion de la pagina contacto */
 
-.btn--contacto{
-        font-size: 1.5rem;
-        width: 150px;
-        height: 50px;
-        margin-bottom: 1rem;
-    }
+.btn--contacto {
+    font-size: 1.5rem;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
 
 
-    
-    /* MEDIA QUERYS */
 
-@media screen and (max-width: 768px){
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 768px) {
 
     /* Configuracion general */
     .img__main--index,
     .img__main--faqs,
     .img__main--contacto,
-    .img--aside{
+    .img--aside {
         width: 50vw;
         max-width: 400px;
         margin-bottom: 1rem;
     }
-    
-    .img--none{
+
+    .img--none {
         display: none;
     }
 
     /* Configuracion de la pagina servicios */
 
-    .lista--tecnico ul{
+    .lista--tecnico ul {
         margin-left: 4rem;
         padding-right: 4rem;
     }
@@ -176,7 +192,7 @@
         max-width: 400px;
     }
 
-    .listado--dispenser:hover{
+    .listado--dispenser:hover {
         transform: none;
     }
 
@@ -189,50 +205,58 @@
 
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
 
-/* Configuracion general */
+    /* Configuracion general */
 
-    .nav-pills .show > .nav-link{
+    .nav-pills .show>.nav-link {
         background-color: transparent;
     }
 
-    .nav-pills .show > .active{
-        background-color: #0d6efd;
+    .nav-pills .show>.active {
+        background-color: $bkgPillsActive;
     }
 
     .img__main--index,
     .img__main--faqs,
     .img--clientes,
     .img__main--contacto,
-    .img--aside{
+    .img--aside {
         width: 100%;
         animation-name: imagenes;
         animation-duration: 5s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
     }
-    
+
     @keyframes imagenes {
-        0% {translate: -120%;}
-        50% {translate: 0;}
-        100% {translate: 120%;}
+        0% {
+            translate: -120%;
+        }
+
+        50% {
+            translate: 0;
+        }
+
+        100% {
+            translate: 120%;
+        }
     }
 
-    footer{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 1em 1em;
-    grid-template-areas:
-        "fnav"
-        "fdcontacto"
-        "fdredes"
-        "cr";
-    background-color: gray;
-    text-align: center;
-    text-shadow: 0 0 10px black;
-    padding-top: 20px;
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1em 1em;
+        grid-template-areas:
+            "fnav"
+            "fdcontacto"
+            "fdredes"
+            "cr";
+        background-color: $bkgFooter;
+        text-align: center;
+        text-shadow: 0 0 10px black;
+        padding-top: 20px;
     }
 
     /* Configuracion de la pagina clientes */
