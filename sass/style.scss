@@ -8,6 +8,8 @@
 
 @import "variables";
 @import "estructura";
+@import "map";
+@import "mixin";
 @import "nav";
 @import "footer";
 
@@ -42,7 +44,7 @@
 
 .marca {
     font-weight: bold;
-    color: $colorMarca;
+    color: map-get($color, colorMarca);
 }
 
 .img__main {
@@ -51,21 +53,20 @@
 }
 
 .btn--inicio img {
-    margin: 1rem 0 1rem 0;
-    width: 2.5rem;
+    @include sizeMargin(2.5rem, 1rem 0 1rem 0);
 }
 
 .img__main--index,
-.img__main--faqs,
-.img__main--contacto {
-    width: 33vw;
+.img__main--faqs {
+    @extend .img__main;
+    @include sizeMargin (33vw, 0 0 1rem 0);
     max-width: 400px;
-    margin-bottom: 1rem;
 }
 
 /* Configuracion de la pagina index */
 
 .img--aside {
+    @extend .img__main;
     position: sticky;
     top: 150px;
 }
@@ -84,7 +85,6 @@
 }
 
 .listado--dispenser {
-    background-color: $bkgListadoDispenser;
     border-radius: 20px;
     border: 1px solid grey;
     text-transform: uppercase;
@@ -105,13 +105,12 @@
 /* Configuracion de la pagina clientes */
 
 .img--logo--clientes {
-    margin-top: 20px;
-    width: 40%;
+    @include sizeMargin(40%, 20px 0 0 0);
 }
 
 .img--clientes {
-    width: 50vw;
-    margin-bottom: 1rem;
+    @extend .img__main;
+    @include sizeMargin(50vw, 0 0 1rem 0);
 }
 
 .container--translucid {
@@ -154,10 +153,9 @@
 /* Configuracion de la pagina contacto */
 
 .btn--contacto {
+    @include sizeMargin(150px, 0 0 1rem 0);
     font-size: 1.5rem;
-    width: 150px;
     height: 50px;
-    margin-bottom: 1rem;
 }
 
 
@@ -171,9 +169,8 @@
     .img__main--faqs,
     .img__main--contacto,
     .img--aside {
-        width: 50vw;
+        @include sizeMargin(50vw, 0 0 1rem 0);
         max-width: 400px;
-        margin-bottom: 1rem;
     }
 
     .img--none {
@@ -199,8 +196,7 @@
     /* Configuracion de la pagina clientes */
 
     .img--logo--clientes {
-        margin-top: 20px;
-        width: 80%;
+        @include sizeMargin(80%, 20px 0 0 0);
     }
 
 }
@@ -262,8 +258,7 @@
     /* Configuracion de la pagina clientes */
 
     .img--logo--clientes {
-        margin-top: 20px;
-        width: 60%;
+        @include sizeMargin(60%, 20px 0 0 0);
     }
 
 }

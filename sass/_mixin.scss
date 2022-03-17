@@ -1,0 +1,5 @@
+// Mixin
+@mixin sizeMargin ($widht, $margin) {
+    width: $widht;
+    margin: $margin;
+}

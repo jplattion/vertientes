@@ -1,0 +1,16 @@
+// Mapeo pagina Servicios
+$dispenser:(space: $bkgStandar,
+    silver: $bkgSilver,
+);
+
+@each $modelo,
+$color in $dispenser {
+    .dispenser--#{$modelo} {
+        background-color: $color;
+    }
+}
+
+// Mapeo de Colores textos
+$color:(colorFooterLink: Darkblue,
+    colorMarca: Blue,
+    colorNavLink: white);

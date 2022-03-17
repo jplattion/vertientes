@@ -11,33 +11,33 @@ footer {
     text-shadow: 0 0 10px black;
     padding-top: 10px;
 
-    .footer__nav{
+    .footer__nav {
         grid-area: fnav;
-        
+
         .footer__nav__item {
             display: flex;
             flex-direction: column;
             list-style: none;
             text-shadow: none;
 
-            .nav--foot--link{
+            .nav--foot--link {
                 text-decoration: none;
-                color: $colorFooterLink;
+                color: map-get($color, colorFooterLink);
             }
         }
     }
 
     div {
-        .subtitulo--footer{
-        font-size: 1.5rem;
+        .subtitulo--footer {
+            font-size: 1.5rem;
         }
     }
 
-    .footer__div--contacto{
+    .footer__div--contacto {
         grid-area: fdcontacto;
     }
-    
-    .footer__div--redes{
+
+    .footer__div--redes {
         grid-area: fdredes;
     }
 
@@ -47,16 +47,16 @@ footer {
         font-size: 1rem;
         text-shadow: none;
     }
-    
+
     .logos--contacto,
-    .logos--redes{
+    .logos--redes {
         display: flex;
         flex-direction: row;
         height: 100%;
         align-items: center;
         justify-content: center;
         margin-top: 0;
-    
+
         .footer__logo {
             width: 80px;
         }

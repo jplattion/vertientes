@@ -1,6 +1,7 @@
 // Colores Background
 $bkgGradiente: linear-gradient(90deg, #0055c8 0%, #002d9b 15%, #00146e 50%, #002d9b 85%, #0055c8 100%);
-$bkgListadoDispenser:rgba(135, 206, 250, 0.5);
+$bkgStandar:rgba(224, 224, 224, 0.5);
+$bkgSilver:rgba(150, 150, 150, 0.5);
 $bkgContainerTranslucid: rgba(128, 128, 128, 0.5);
 $bkgPillsActive: #0d6efd;
 $bkgFooter: grey;
@@ -11,11 +12,6 @@ $sombraGris: -1px 0 1px grey,
 0 1px 1px grey,
 1px 0 1px grey,
 0 -1px 1px grey;
-
-// Colores textos
-$colorFooterLink: Darkblue;
-$colorMarca: Blue;
-$colorNavLink: white;
 
 // Animaciones
 $animacionNav: inset -2px 0 5px white,

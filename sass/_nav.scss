@@ -1,4 +1,3 @@
-
 /* Reglas para el header y la navegacion superior*/
 .logo {
     width: 60%;
@@ -7,19 +6,21 @@
     padding: 1rem 0 1rem 0;
 }
 
-.nav-link{
-    color: $colorNavLink;
+.nav-link {
+    color: map-get($color, colorNavLink);
 
-    &:hover{
+    &:hover {
         box-shadow: $animacionNav;
-        animation-name: animation--nav; 
+        animation-name: animation--nav;
         animation-duration: 2s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
-        color: $colorNavLink;
+        color: map-get($color, colorNavLink);
     }
 
     @keyframes animation--nav {
-        50% {border-radius: 20px;}
+        50% {
+            border-radius: 20px;
+        }
     }
 }

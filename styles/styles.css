@@ -21,6 +21,12 @@ body {
   body section {
     margin-top: 1rem; }
 
+.dispenser--space {
+  background-color: rgba(224, 224, 224, 0.5); }
+
+.dispenser--silver {
+  background-color: rgba(150, 150, 150, 0.5); }
+
 /* Reglas para el header y la navegacion superior*/
 .logo {
   width: 60%;
@@ -112,20 +118,20 @@ footer {
   font-weight: bold;
   color: Blue; }
 
-.img__main {
+.img__main, .img__main--index,
+.img__main--faqs, .img--aside, .img--clientes {
   border: 2px solid white;
   border-radius: 20px; }
 
 .btn--inicio img {
-  margin: 1rem 0 1rem 0;
-  width: 2.5rem; }
+  width: 2.5rem;
+  margin: 1rem 0 1rem 0; }
 
 .img__main--index,
-.img__main--faqs,
-.img__main--contacto {
+.img__main--faqs {
   width: 33vw;
-  max-width: 400px;
-  margin-bottom: 1rem; }
+  margin: 0 0 1rem 0;
+  max-width: 400px; }
 
 /* Configuracion de la pagina index */
 .img--aside {
@@ -144,7 +150,6 @@ footer {
   margin-bottom: 1rem; }
 
 .listado--dispenser {
-  background-color: rgba(135, 206, 250, 0.5);
   border-radius: 20px;
   border: 1px solid grey;
   text-transform: uppercase;
@@ -161,12 +166,12 @@ footer {
 
 /* Configuracion de la pagina clientes */
 .img--logo--clientes {
-  margin-top: 20px;
-  width: 40%; }
+  width: 40%;
+  margin: 20px 0 0 0; }
 
 .img--clientes {
   width: 50vw;
-  margin-bottom: 1rem; }
+  margin: 0 0 1rem 0; }
 
 .container--translucid {
   margin-bottom: 20px;
@@ -197,10 +202,10 @@ footer {
 
 /* Configuracion de la pagina contacto */
 .btn--contacto {
-  font-size: 1.5rem;
   width: 150px;
-  height: 50px;
-  margin-bottom: 1rem; }
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  height: 50px; }
 
 /* MEDIA QUERYS */
 @media screen and (max-width: 768px) {
@@ -210,8 +215,8 @@ footer {
   .img__main--contacto,
   .img--aside {
     width: 50vw;
-    max-width: 400px;
-    margin-bottom: 1rem; }
+    margin: 0 0 1rem 0;
+    max-width: 400px; }
   .img--none {
     display: none; }
   /* Configuracion de la pagina servicios */
@@ -225,8 +230,8 @@ footer {
     transform: none; }
   /* Configuracion de la pagina clientes */
   .img--logo--clientes {
-    margin-top: 20px;
-    width: 80%; } }
+    width: 80%;
+    margin: 20px 0 0 0; } }
 
 @media screen and (max-width: 576px) {
   /* Configuracion general */
@@ -263,5 +268,5 @@ footer {
     padding-top: 20px; }
   /* Configuracion de la pagina clientes */
   .img--logo--clientes {
-    margin-top: 20px;
-    width: 60%; } }
+    width: 60%;
+    margin: 20px 0 0 0; } }
