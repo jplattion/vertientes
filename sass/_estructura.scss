@@ -4,6 +4,7 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.5rem;
     background-color: $bkgBody;
+    background-image: $bkgBodyImage;
 
     header,
     .sticky-top {
